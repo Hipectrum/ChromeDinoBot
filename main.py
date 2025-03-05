@@ -38,7 +38,6 @@ def duck():
 
 jump()
 
-
 with mss() as sct:
     while True:
         screenshot = sct.grab(game_region)
