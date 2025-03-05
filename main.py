@@ -43,7 +43,6 @@ with mss() as sct:
         screenshot = sct.grab(game_region)
         img = np.array(screenshot)
 
-
         obstacle_pixels = img[120, 55:110]
         detected = np.any(
             (obstacle_pixels[:, 0] >= 168) & (obstacle_pixels[:, 0] <= 174) &
